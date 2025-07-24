@@ -1,3 +1,8 @@
+/**
+ * ダッシュボードページ
+ * ここでタスクの一覧表示などする
+ */
+
 import React from 'react'
 
 const DashboardPage = () => {
