@@ -6,7 +6,7 @@ import {
   SidebarMenu,
   SidebarMenuItem,
   SidebarMenuButton,
-} from "@/components/layouts/sidebar/sidebar"
+} from "@/components/layouts/sidebar/Sidebar"
 
 export function AppSidebar() {
   return (
