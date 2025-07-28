@@ -44,6 +44,7 @@
 }
 
 :root {
+  --font-noto-sans-jp: 'Noto Sans JP', 'Noto Sans', 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Meiryo', sans-serif;
   --radius: 0.625rem;
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
@@ -118,5 +119,6 @@
   }
   body {
     @apply bg-background text-foreground;
+    font-family: var(--font-noto-sans-jp);
   }
 }
