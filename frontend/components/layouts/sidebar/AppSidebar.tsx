@@ -6,7 +6,7 @@ import {
   SidebarMenu,
   SidebarMenuItem,
   SidebarMenuButton,
-} from "./sidebar" // ファイル名に注意（Sidebar.tsxが推奨）
+} from "@/components/layouts/sidebar/Sidebar"
 
 export function AppSidebar() {
   return (

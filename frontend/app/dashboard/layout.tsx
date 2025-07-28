@@ -1,5 +1,5 @@
 import { AppSidebar } from "@/components/layouts/sidebar/AppSidebar";
-import { SidebarProvider, SidebarTrigger } from "@/components/layouts/sidebar/sidebar";
+import { SidebarProvider, SidebarTrigger } from "@/components/layouts/sidebar/Sidebar";
 // import { Sidebar } from "lucide-react";
 
 export default function DashboardLayout({
