@@ -102,9 +102,10 @@ const LoginForm = () => {
         <Button type="submit" form='signup-form' className="w-full">
           ログイン
         </Button>
-        <Button variant="outline" className="w-full">
+        {/* ↓Googleの認証はめんどいしいったん必要ないかも */}
+        {/* <Button variant="outline" className="w-full">
           Googleでログイン
-        </Button>
+        </Button> */}
       </CardFooter>
     </Card>
   )

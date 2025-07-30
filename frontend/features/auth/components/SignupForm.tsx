@@ -40,7 +40,7 @@ const SignupForm = () => {
 
 
   return (
-    <Card className="w-full max-w-sm">
+    <Card className="w-full max-w-lg">
       <CardHeader>
         <CardTitle>新規登録フォーム</CardTitle>
         <CardDescription>
@@ -91,9 +91,10 @@ const SignupForm = () => {
         <Button type="submit" form='signup-form' className="w-full">
           新規登録
         </Button>
-        <Button variant="outline" className="w-full">
+        {/* googleの認証はいったんやらない */}
+        {/* <Button variant="outline" className="w-full">
           Googleで登録
-        </Button>
+        </Button> */}
       </CardFooter>
     </Card>
   )
