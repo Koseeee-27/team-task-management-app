@@ -1,0 +1,26 @@
+// prisma/schema.prisma
+
+// 1. データベースへの接続設定
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL") // .envファイルから読み込む
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+// 2. Userモデル（テーブル）の定義
+model User {
+  id        String    @id @default(cuid())
+  email     String    @unique
+  projects  Project[]
+}
+
+// 3. Projectモデル（テーブル）の定義
+model Project {
+  id      String @id @default(cuid())
+  name    String
+  ownerId String
+  owner   User   @relation(fields: [ownerId], references: [id])
+}
