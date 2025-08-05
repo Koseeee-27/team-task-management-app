@@ -4,6 +4,7 @@ import { Button } from '@/components/ui/button'
 import { Card, CardAction, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
+import Link from 'next/link'
 
 export default function LoginForm() {
   return (
@@ -38,9 +39,13 @@ export default function LoginForm() {
           </div>
         </form>
       </CardContent>
-      <CardFooter>
+      <CardFooter className="flex flex-col gap-4">
         <Button formAction={login} form='login-form' className="w-full">ログイン</Button>
-        {/* <Button formAction={signup}>サインアップ</Button> */}
+        <Button className='w-full' variant={'link'}>
+          <Link href="/signup">
+            アカウント作成がまだの方はこちら
+          </Link>
+        </Button>
       </CardFooter>
     </Card>
   )
